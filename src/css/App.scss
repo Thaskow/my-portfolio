@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Thunder';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/630e8e6ed78cba30b6908c15_Thunder-ThinLC.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/630e8e6eeb39f9387a5aba37_Thunder-LC.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/630e8e6e2a566a25f6506d03_Thunder-MediumLC.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/630e8e6e4ce2e4eab934b3d5_Thunder-SemiBoldLC.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/630e8e6eef2045b1be0e05dd_Thunder-LightLC.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/630e8e6e5faf1ad7d5a833c4_Thunder-BoldLC.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/630e8e6e2a566a6f8e506d0c_Thunder-ExtraBoldLC.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/630e8e6e321ba75223fddb5d_Thunder-ExtraLightLC.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/630e8e6eef204581470e05de_Thunder-BlackLC.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/6318ff854e763de1f0988534_GeneralSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/6318ff854e763d847d988535_GeneralSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/6318ff85184dc819a3e6bbb9_GeneralSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/6318ff85ae036c60dca38a9e_GeneralSans-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('https://assets.website-files.com/630e8d61ed9649626944181f/6318ff85598564ab56a05c6d_GeneralSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+.portfolio {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .element {
+    height: 93vh;
+    margin: 2rem;
+    margin-top: 2.2rem;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "titre": "Wikinfra",
+    "description": "Wikinfra est un projet de documentation de linfrastructure au sein du service. Il permet de documenter les serveurs, les services, les configurations, les procédures, etc. Avec une interface simple et intuitive, il permet de retrouver rapidement les informations recherchées.",
+    "url": "https://wikinfra.univ-paris1.fr",
+    "background": "https://images.unsplash.com/photo-1519972345803-7b5e39723995?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "wikinfra.png",
+    "tags": [
+      "design",
+      "developpement",
+      "conception"
+    ]
+  },
+  {
+    "titre": "Wikinfra",
+    "description": "Wikinfra est un projet de documentation de linfrastructure au sein du service. Il permet de documenter les serveurs, les services, les configurations, les procédures, etc. Avec une interface simple et intuitive, il permet de retrouver rapidement les informations recherchées.",
+    "url": "https://wikinfra.univ-paris1.fr",
+    "background": "https://images.unsplash.com/photo-1541140134513-85a161dc4a00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "wikinfra.png",
+    "tags": [
+      "design",
+      "developpement",
+      "conception"
+    ]
+  },
+  {
+    "titre": "Plannification",
+    "description": "Plannification est un projet de gestion des plannings des agents du service. Il permet de gérer les congés, les absences, les formations, les astreintes, etc. Avec une interface simple et intuitive, il permet de retrouver rapidement les informations recherchées.",
+    "url": "https://plannification.univ-paris1.fr",
+    "background": "https://images.unsplash.com/photo-1519972064555-542444e71b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "plannification.png",
+    "tags": [
+      "design",
+      "developpement",
+      "conception"
+    ]
+  }
+]

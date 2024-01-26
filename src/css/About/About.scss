@@ -1,0 +1,349 @@
+$contact-color: #2a27e2;
+$to-top-color: #beed3a;
+$application-color: #FED2CF;
+$techno-color: #ABADDD;
+$experiences-color: #01AA89;
+$etudes-color: #FAFECF;
+
+// Partie générale
+
+.about {
+  display: flex;
+
+  .first-part {
+    width: 80%;
+    height: 100%;
+
+    .top-part, .bottom-part {
+      width: 100%;
+      height: 50%;
+      padding-right: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .top-part {
+      padding-bottom: 1rem;
+    }
+
+    .bottom-part {
+      padding-top: 1.5rem;
+    }
+  }
+
+  .second-part {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .to-top, .send-message {
+      width: 100%;
+    }
+  }
+}
+
+
+// Partie Spécifique
+
+.to-top {
+  background: $to-top-color;
+  border-radius: 1rem;
+  width: 100%;
+  height: 28%;
+
+  a {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+
+    .text {
+      padding-top: 1rem;
+      height: 100%;
+      line-height: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 4em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #000;
+      font-family: Thunder, sans-serif;
+    }
+  }
+}
+
+.send-message {
+  height: 68%;
+  width: 100%;
+  background: $contact-color;
+  border-radius: 1rem;
+
+  a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .text-first {
+      padding-left: 3em;
+
+      .split-text {
+        color: white;
+        font-family: Thunder, sans-serif;
+        font-size: 4em;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .mail-text {
+        color: white;
+        line-height: 1.3;
+        margin-top: 1em;
+        font-size: 1.125em;
+        font-weight: 500;
+        font-family: "General Sans", sans-serif;
+      }
+    }
+  }
+
+}
+
+.application {
+  height: 100%;
+  width: 32%;
+  background: $application-color;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  h1 {
+    margin-left: 0.1em;
+    font-family: Thunder, sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  .application-content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .application-item {
+      margin: 0.2em;
+      position: relative;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease-in-out;
+
+      svg {
+        position: absolute;
+        width: 3em;
+        height: 3em;
+      }
+    }
+  }
+}
+
+
+.techno {
+  height: 100%;
+  width: 32%;
+  background: $techno-color;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  h1 {
+    margin-left: 0.1em;
+    font-family: Thunder, sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  .techno-content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .techno-item {
+      margin: 0.2em;
+      position: relative;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease-in-out;
+
+      svg {
+        position: absolute;
+        width: 3em;
+        height: 3em;
+
+        path {
+          fill: #111111;
+        }
+      }
+    }
+  }
+}
+
+.experiences {
+  padding: 2rem;
+  width: 65%;
+  height: 100%;
+  border-radius: 1rem;
+  background: $experiences-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .title-experiences {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  h1 {
+    font-family: Thunder, sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+  }
+}
+
+.etudes {
+  padding: 2rem;
+  width: 65%;
+  height: 100%;
+  border-radius: 1rem;
+  background: $etudes-color;
+
+  h1 {
+    font-family: Thunder, sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+  }
+}
+
+// TEST
+
+
+.test {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  background: white;
+  width: 207vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$book-cover: #dc8920;
+$split-cover:#d99d29;
+
+.book {
+  display: flex;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 20rem;
+  .book-cover {
+    &.separate {
+      display: flex;
+      width: 1rem;
+      align-items: flex-end;
+      .remplissage {
+        border-radius: 0.1rem;
+        margin-bottom: 0.3rem;
+        height: 86%;
+        width: 100%;
+        background: $split-cover;
+      }
+    }
+    &.left, &.right {
+      height: 20rem;
+      width: 15rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      .remplissage {
+        position: relative;
+        height: 60%;
+        width: 100%;
+
+        &::after {
+          content: "";
+          left: -5rem;
+          position: absolute;
+          height: 15rem;
+          width: 201%;
+          background: $book-cover;
+        }
+        &::before {
+          content: "";
+          bottom: -2.5rem;
+          border-radius: 2rem;
+          position: absolute;
+          height: 7rem;
+          width: 120%;
+          background: $book-cover;
+        }
+      }
+    }
+
+    &.left {
+      .remplissage::after {
+        top: -2.2rem;
+        transform: rotate(10deg);
+      }
+
+      .remplissage::before {
+        left: 0rem;
+        transform: rotate(10deg);
+      }
+    }
+
+    &.right {
+      .remplissage::after {
+        top: -3.1rem;
+        transform: rotate(-10deg);
+      }
+
+      .remplissage::before {
+        right: 0rem;
+        transform: rotate(-10deg);
+      }
+    }
+  }
+}
