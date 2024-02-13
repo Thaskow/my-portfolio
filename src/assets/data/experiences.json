@@ -1,0 +1,32 @@
+[
+  {
+    "entreprise": "Manufacture Jeager-LeCoultre",
+    "poste": "Gestionnaire Parc Informatique",
+    "ville": "Le Sentier, Suisse",
+    "mission": "Maintenance du parc informatique",
+    "date": "Juin 2017",
+    "duree": "6semaines",
+    "contrat": "Stagiaire",
+    "site": "https://www.jaeger-lecoultre.com/eu-fr"
+  },
+  {
+    "entreprise": "Kraken Lab (fermé)",
+    "poste": "Développeur",
+    "ville": "Pontarlier",
+    "mission": "Dévelopemment sur le projet numériloupe",
+    "date": "Octobre 2019",
+    "duree": "8semaines",
+    "contrat": "Stagiaire",
+    "site": "https://www.signaux-girod.fr/"
+  },
+  {
+    "entreprise": "Signaux Girod",
+    "poste": "Gestionnaire Parc Informatique",
+    "ville": "Bellefontaine",
+    "mission": "Gestion du parc informatique",
+    "date": "Octobre 2020",
+    "duree": "3ans",
+    "contrat": "Alternant",
+    "site": "https://www.signaux-girod.fr/"
+  }
+]

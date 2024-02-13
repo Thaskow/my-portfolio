@@ -1,28 +1,57 @@
+import etudes from "../../assets/data/etudes.json";
+
 function Etudes() {
-  return (
-    // <div className="etudes">
-    //   <h1>Etudes</h1>
-    //   <p>BAC PRO SN option RISC</p>
-    //   <p>BTS SIO option SLAM</p>
-    //   <p>Licence</p>
-    //   <p>Titre professionel BAC+4</p>
-    //   <p>.. Master .. DIAGE</p>
-    // </div>
-      <div className="test">
-            <div className="book">
-                <div className="book-cover left">
-                    <div className="remplissage">
-                    </div>
-                </div>
-                <div className="book-cover separate">
-                    <div className="remplissage"></div>
-                </div>
-                <div className="book-cover right">
-                    <div className="remplissage"></div>
+    return (
+        <div className="etudes">
+            <div className="animation">
+                <div className="dots">
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
+                    <div className="dot"></div>
                 </div>
             </div>
-      </div>
-  );
+            <h1>Etudes</h1>
+            <div className="formations">
+            {etudes.reverse().slice(0, 3).reverse().map((etude) => (
+                <div className="formation">
+                    <a href={etude.lien} target='_blank' rel='noreferrer'>
+                        <div className="etude">
+                            <div className="niveau">
+                                <p>{etude.niveau}</p>
+                            </div>
+                            <div className="diplome" title={etude.dSignification}>
+                                <p>{etude.diplome}</p>
+                            </div>
+                        </div>
+                        <div className="option" title={etude.oSignigication}>
+                            <p>{etude.option}</p>
+                        </div>
+                        <div className="zone">
+                            <div className="etablissement">
+                                <p>{etude.etablissement}, {etude.ville}</p>
+                            </div>
+                        </div>
+                        <div className="annee">
+                            <p>{etude.annee}</p>
+                        </div>
+                    </a>
+                </div>
+            ))}
+            </div>
+        </div>
+    );
 }
 
 export default Etudes;

@@ -214,6 +214,7 @@ $etudes-color: #FAFECF;
 }
 
 .experiences {
+  position: relative;
   padding: 2rem;
   width: 65%;
   height: 100%;
@@ -222,6 +223,163 @@ $etudes-color: #FAFECF;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "General Sans", sans-serif;
+
+  .animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    .dots {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .dot {
+        position: absolute;
+        width: 2rem;
+        height: 1rem;
+        border-radius: 1rem;
+        background: #000;
+        margin: 0 0.5rem;
+        animation: bounce 10s ease-in-out infinite;
+
+        &:nth-child(1) {
+          animation-delay: 0.5s;
+          top: 12rem;
+          left: 13rem;
+          transform: rotate(-118deg);
+        }
+
+        &:nth-child(2) {
+          animation-delay: 1s;
+          top: 13rem;
+          left: 16rem;
+          transform: rotate(-130deg);
+        }
+
+        &:nth-child(3) {
+          animation-delay: 1.5s;
+          top: 16rem;
+          left: 16rem;
+          transform: rotate(-140deg);
+        }
+
+        &:nth-child(4) {
+          animation-delay: 2s;
+          top: 15rem;
+          left: 19rem;
+          transform: rotate(20deg);
+        }
+
+        &:nth-child(5) {
+          animation-delay: 2.5s;
+          top: 17rem;
+          left: 21rem;
+          transform: rotate(10deg);
+        }
+
+        &:nth-child(6) {
+          animation-delay: 4.5s;
+          top: 17.2rem;
+          left: 38rem;
+          transform: rotate(0deg);
+        }
+
+        &:nth-child(7) {
+          animation-delay: 5s;
+          top: 15.5rem;
+          left: 40rem;
+          transform: rotate(-20deg);
+        }
+        &:nth-child(8) {
+          animation-delay: 5.5s;
+          top: 16rem;
+          left: 42.5rem;
+          transform: rotate(-40deg);
+        }
+        &:nth-child(9) {
+          animation-delay: 6s;
+          top: 13.2rem;
+          left: 43rem;
+          transform: rotate(-60deg);
+        }
+        &:nth-child(10) {
+          animation-delay: 6.5s;
+          top: 12rem;
+          left: 45.2rem;
+          transform: rotate(-80deg);
+        }
+
+      }
+    }
+  }
+
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .content {
+    padding-top: 3rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .experience {
+      height: fit-content;
+      width: fit-content;
+
+      &:nth-child(1), &:nth-child(3) {
+        z-index: 15;
+        background: $experiences-color;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .poste {
+        display: flex;
+.contrat {
+  padding-top: 0.2rem;
+}
+        .pos {
+          font-family: Thunder, sans-serif;
+          margin-right: .1rem;
+          font-size: 1.5rem;
+          font-weight: 500;
+
+        }
+      }
+    }
+
+    .experience:nth-last-child(2) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      order: 3;
+
+      a {
+        z-index: 15;
+        background: $experiences-color;
+        width: fit-content;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
 
   .title-experiences {
     display: flex;
@@ -239,6 +397,8 @@ $etudes-color: #FAFECF;
 
 .etudes {
   padding: 2rem;
+  overflow: hidden;
+  position: relative;
   width: 65%;
   height: 100%;
   border-radius: 1rem;
@@ -251,99 +411,219 @@ $etudes-color: #FAFECF;
     text-transform: uppercase;
     color: #000;
   }
-}
 
-// TEST
+  .animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 
-
-.test {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  background: white;
-  width: 207vh;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-$book-cover: #dc8920;
-$split-cover:#d99d29;
-
-.book {
-  display: flex;
-  overflow: hidden;
-  border-radius: 1rem;
-  height: 20rem;
-  .book-cover {
-    &.separate {
-      display: flex;
-      width: 1rem;
-      align-items: flex-end;
-      .remplissage {
-        border-radius: 0.1rem;
-        margin-bottom: 0.3rem;
-        height: 86%;
-        width: 100%;
-        background: $split-cover;
-      }
-    }
-    &.left, &.right {
-      height: 20rem;
-      width: 15rem;
+    .dots {
+      width: 100%;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
 
-      .remplissage {
-        position: relative;
-        height: 60%;
-        width: 100%;
+      .dot {
+        position: absolute;
+        width: 2rem;
+        height: 1rem;
+        border-radius: 1rem;
+        background: #000;
+        margin: 0 0.5rem;
+        animation: bounce 10s ease-in-out infinite;
 
-        &::after {
-          content: "";
-          left: -5rem;
-          position: absolute;
-          height: 15rem;
-          width: 201%;
-          background: $book-cover;
+        &:nth-child(1) {
+          animation-delay: 0.5s;
+          top: 12rem;
+          left: 25rem;
+          transform: rotate(-15deg);
         }
-        &::before {
-          content: "";
-          bottom: -2.5rem;
-          border-radius: 2rem;
-          position: absolute;
-          height: 7rem;
-          width: 120%;
-          background: $book-cover;
+
+        &:nth-child(2) {
+          animation-delay: 1s;
+          top: 10rem;
+          left: 28rem;
+          transform: rotate(-25deg);
+        }
+
+        &:nth-child(3) {
+          animation-delay: 1.5s;
+          top: 11rem;
+          left: 31rem;
+          transform: rotate(-5deg);
+        }
+
+        &:nth-child(4) {
+          animation-delay: 2s;
+          top: 10rem;
+          left: 34rem;
+          transform: rotate(5deg);
+        }
+
+        &:nth-child(5) {
+          animation-delay: 2.5s;
+          top: 11.5rem;
+          left: 37rem;
+          transform: rotate(10deg);
+        }
+
+        &:nth-child(6) {
+          animation-delay: 3s;
+          top: 10.5rem;
+          left: 40rem;
+          transform: rotate(20deg);
+        }
+
+        &:nth-child(7) {
+          animation-delay: 3.5s;
+          top: 12.5rem;
+          left: 42.7rem;
+          transform: rotate(20deg);
+        }
+
+        &:nth-child(8) {
+          animation-delay: 5s;
+          top: 15rem;
+          left: 48rem;
+          transform: rotate(20deg);
+        }
+
+        &:nth-child(9) {
+          animation-delay: 5.5s;
+          top: 17.5rem;
+          left: 49.5rem;
+          transform: rotate(60deg);
+        }
+
+        &:nth-child(10) {
+          animation-delay: 6s;
+          top: 19.7rem;
+          left: 51.5rem;
+          transform: rotate(90deg);
+        }
+
+        &:nth-child(11) {
+          animation-delay: 6.5s;
+          top: 22.5rem;
+          left: 49.5rem;
+          transform: rotate(120deg);
+        }
+
+        &:nth-child(12) {
+          animation-delay: 7s;
+          top: 25.5rem;
+          left: 48rem;
+          transform: rotate(160deg);
+        }
+
+        &:nth-child(13) {
+          animation-delay: 7.5s;
+          top: 25rem;
+          left: 44rem;
+          transform: rotate(180deg);
+        }
+
+        &:nth-child(14) {
+          animation-delay: 8s;
+          top: 25.5rem;
+          left: 40.5rem;
+          transform: rotate(200deg);
+        }
+
+        &:nth-child(15) {
+          animation-delay: 8.5s;
+          top: 22.5rem;
+          left: 38rem;
+          transform: rotate(220deg);
         }
       }
     }
+  }
 
-    &.left {
-      .remplissage::after {
-        top: -2.2rem;
-        transform: rotate(10deg);
-      }
+  .formations {
+    z-index: 2;
+    padding-top: 2rem;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "General Sans", sans-serif;
 
-      .remplissage::before {
-        left: 0rem;
-        transform: rotate(10deg);
-      }
+    a {
+      text-decoration: none;
+      color: black;
     }
 
-    &.right {
-      .remplissage::after {
-        top: -3.1rem;
-        transform: rotate(-10deg);
+    .formation {
+      display: flex;
+      height: fit-content;
+      width: fit-content;
+
+      &:nth-child(1), &:nth-child(2) {
+        background: $etudes-color;
+        z-index: 15;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
       }
 
-      .remplissage::before {
-        right: 0rem;
-        transform: rotate(-10deg);
+      &:nth-child(3) {
+        z-index: 15;
+
+        width: 80%;
+        display: flex;
+        justify-content: center;
+
+        a {
+          background: $etudes-color;
+          width: fit-content;
+          padding: .5rem 1rem;
+          border-radius: 1rem;
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      .etude {
+        display: flex;
+        flex-wrap: wrap;
+
+        .niveau {
+          font-family: Thunder, sans-serif;
+          margin-right: .5rem;
+          font-size: 1.5rem;
+          font-weight: 500;
+
+        }
+
+        .diplome {
+          padding-top: 0.2rem;
+        }
       }
     }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -1,0 +1,35 @@
+[
+  {
+    "niveau": "BAC PRO",
+    "diplome": "SN",
+    "dSignification": "Systèmes Numériques",
+    "option": "RISC",
+    "oSignigication": "Réseaux Informatiques et Systèmes Communicants",
+    "etablissement": "Lycée Professionnel Privé Saint Bénigne",
+    "ville": "Pontarlier",
+    "annee": "2019",
+    "lien": "https://eduscol.education.fr/sti/formations/bac-pro/bac-pro-systemes-numeriques-sn#presentation"
+  },
+  {
+    "niveau": "BTS",
+    "diplome": "SIO",
+    "dSignification": "Services Informatiques aux Organisations",
+    "option": "SLAM",
+    "oSignigication": "Solutions Logicielles et Applications Métiers",
+    "etablissement": "Lycée Pasteur Mont Roland",
+    "ville": "Dole",
+    "annee": "2022",
+    "lien": "https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
+  },
+  {
+    "niveau": "Licence (BAC+3-4, en cours)",
+    "diplome": "Science, Technologie, Santé",
+    "dSignification": "",
+    "option": "Informatique",
+    "oSignigication": "Parcours Informatique générale",
+    "etablissement": "Lycée Pasteur Mont Roland",
+    "ville": "Dole",
+    "annee": "2023/2024",
+    "lien": "https://www.cnam-bourgognefranchecomte.fr/diplomes/informatique/licence-g-n-rale/lg02501b-licence-sciences-technologies-sante-mention-informatique-parcours-informatique-generale-en-alternance"
+  }
+]

@@ -5,6 +5,13 @@ import Projet from './components/Project/Page';
 import './css/App.scss';
 
 function App() {
+
+    // change title
+    document.title = "Lucas. - Développeur Web & App"
+
+
+
+
     const pageHeight = document.documentElement.scrollHeight;
     const elements = document.getElementsByClassName('element');
     let counter = 0;
@@ -24,12 +31,12 @@ function App() {
         //calcule vitesse de scroll
         const speed = Math.abs((window.scrollY - scrollValue) / 100);
 
-        console.log(speed)
+        // console.log(speed)
 
 
         if (speed < 2) {
             // Récupération de la direction du scroll
-            console.log(event);
+            // console.log(event);
             scrollDir = scrollValue > window.scrollY ? 'up' : 'down';
 
             // Taille des éléments
@@ -74,8 +81,8 @@ function App() {
 
     return (
         <div className="portfolio">
-            {/*<Presentation/>*/}
-            {/*<Projet/>*/}
+            <Presentation/>
+            <Projet/>
             <About/>
         </div>
     );

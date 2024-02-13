@@ -14,16 +14,16 @@ function Page () {
         <div className="first-part">
             <div className="top-part">
                 <Etudes />
-                {/*<Techno />*/}
+                <Techno />
             </div>
             <div className="bottom-part">
-                {/*<Application />*/}
-                {/*<Experiences />*/}
+                <Application />
+                <Experiences />
             </div>
         </div>
         <div className="second-part">
-            {/*<ToTop />*/}
-            {/*<SendMessage />*/}
+            <ToTop />
+            <SendMessage />
         </div>
     </div>
   )
